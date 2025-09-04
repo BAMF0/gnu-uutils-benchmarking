@@ -18,3 +18,8 @@ head -c 4294967295 > oneline_4G.txt && echo >> oneline_4G.txt
 truncate -s 4G truncated_4G_file
 ```
 
+## Reference Machine
+* **OS**: Ubuntu Questing Quokka (development branch) 25.10
+* **Hardware Model**: Lenovo Legion Slim 5 16IRH8
+* **Processor**: 13th Gen Intel® Core™ i7-13620H × 16
+* **Memory**: DDR5 16.0 GiB @ 5600 MT/s
