@@ -1,5 +1,7 @@
 # GNU Coreutils/uutils coreutils evaluation
 This repository collects results from benchmarking runs on the [GNU Coreutils](https://www.gnu.org/software/coreutils/manual/coreutils.html) and the [uutils coreutils](https://github.com/uutils/coreutils).
+
+Tested on GNU coreutils version `9.5-1ubuntu2+0.0.0~ubuntu20` and uutils/coreutils `0.1.0`.
 ## Evaluation
 All utilities are compared using the [`hyperfine`](https://github.com/sharkdp/hyperfine) benchmarking tool. Typically, benchmarks take the form:
 
