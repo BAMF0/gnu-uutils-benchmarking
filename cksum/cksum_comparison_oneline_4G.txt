@@ -1,0 +1,12 @@
+Benchmark 1: cksum /home/bamf0/temp/large_files/oneline_4G.txt
+  Time (mean ± σ):     427.0 ms ±  13.8 ms    [User: 119.7 ms, System: 307.1 ms]
+  Range (min … max):   411.5 ms … 452.2 ms    10 runs
+ 
+Benchmark 2: coreutils cksum /home/bamf0/temp/large_files/oneline_4G.txt
+  Time (mean ± σ):      7.578 s ±  0.025 s    [User: 7.195 s, System: 0.382 s]
+  Range (min … max):    7.538 s …  7.633 s    10 runs
+ 
+Summary
+  cksum /home/bamf0/temp/large_files/oneline_4G.txt ran
+   17.75 ± 0.58 times faster than coreutils cksum /home/bamf0/temp/large_files/oneline_4G.txt
+[Generated with run_benchmark.sh]

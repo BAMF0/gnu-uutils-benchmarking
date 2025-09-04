@@ -1,0 +1,12 @@
+Benchmark 1: sha256sum /home/bamf0/temp/large_files/truncated_4G_file
+  Time (mean ± σ):      2.157 s ±  0.012 s    [User: 1.830 s, System: 0.326 s]
+  Range (min … max):    2.135 s …  2.174 s    10 runs
+ 
+Benchmark 2: coreutils sha256sum /home/bamf0/temp/large_files/truncated_4G_file
+  Time (mean ± σ):      6.377 s ±  0.089 s    [User: 5.983 s, System: 0.394 s]
+  Range (min … max):    6.264 s …  6.541 s    10 runs
+ 
+Summary
+  sha256sum /home/bamf0/temp/large_files/truncated_4G_file ran
+    2.96 ± 0.04 times faster than coreutils sha256sum /home/bamf0/temp/large_files/truncated_4G_file
+[Generated with run_benchmark.sh]

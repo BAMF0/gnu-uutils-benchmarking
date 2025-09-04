@@ -1,0 +1,12 @@
+Benchmark 1: sha224sum /home/bamf0/temp/large_files/oneline_4G.txt
+  Time (mean ± σ):      2.107 s ±  0.002 s    [User: 1.808 s, System: 0.298 s]
+  Range (min … max):    2.103 s …  2.111 s    10 runs
+ 
+Benchmark 2: coreutils sha224sum /home/bamf0/temp/large_files/oneline_4G.txt
+  Time (mean ± σ):      6.225 s ±  0.012 s    [User: 5.846 s, System: 0.379 s]
+  Range (min … max):    6.207 s …  6.239 s    10 runs
+ 
+Summary
+  sha224sum /home/bamf0/temp/large_files/oneline_4G.txt ran
+    2.96 ± 0.01 times faster than coreutils sha224sum /home/bamf0/temp/large_files/oneline_4G.txt
+[Generated with run_benchmark.sh]

@@ -1,0 +1,12 @@
+Benchmark 1: fold /home/bamf0/temp/large_files/truncated_4G_file
+  Time (mean ± σ):      6.187 s ±  0.132 s    [User: 5.681 s, System: 0.506 s]
+  Range (min … max):    5.963 s …  6.377 s    10 runs
+ 
+Benchmark 2: coreutils fold /home/bamf0/temp/large_files/truncated_4G_file
+  Time (mean ± σ):     12.399 s ±  0.155 s    [User: 8.241 s, System: 4.157 s]
+  Range (min … max):   12.220 s … 12.680 s    10 runs
+ 
+Summary
+  fold /home/bamf0/temp/large_files/truncated_4G_file ran
+    2.00 ± 0.05 times faster than coreutils fold /home/bamf0/temp/large_files/truncated_4G_file
+[Generated with run_benchmark.sh]

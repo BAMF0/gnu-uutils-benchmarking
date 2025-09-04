@@ -1,0 +1,12 @@
+Benchmark 1: fold /home/bamf0/temp/large_files/oneline_4G.txt
+  Time (mean ± σ):      6.003 s ±  0.091 s    [User: 5.507 s, System: 0.496 s]
+  Range (min … max):    5.845 s …  6.149 s    10 runs
+ 
+Benchmark 2: coreutils fold /home/bamf0/temp/large_files/oneline_4G.txt
+  Time (mean ± σ):     12.491 s ±  0.089 s    [User: 8.281 s, System: 4.209 s]
+  Range (min … max):   12.376 s … 12.614 s    10 runs
+ 
+Summary
+  fold /home/bamf0/temp/large_files/oneline_4G.txt ran
+    2.08 ± 0.03 times faster than coreutils fold /home/bamf0/temp/large_files/oneline_4G.txt
+[Generated with run_benchmark.sh]

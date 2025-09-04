@@ -1,0 +1,12 @@
+Benchmark 1: split /home/bamf0/temp/large_files/oneline_4G.txt
+  Time (mean ± σ):      2.439 s ±  0.377 s    [User: 0.047 s, System: 1.045 s]
+  Range (min … max):    1.974 s …  3.092 s    10 runs
+ 
+Benchmark 2: coreutils split /home/bamf0/temp/large_files/oneline_4G.txt
+  Time (mean ± σ):      2.845 s ±  0.340 s    [User: 0.273 s, System: 1.387 s]
+  Range (min … max):    2.491 s …  3.475 s    10 runs
+ 
+Summary
+  split /home/bamf0/temp/large_files/oneline_4G.txt ran
+    1.17 ± 0.23 times faster than coreutils split /home/bamf0/temp/large_files/oneline_4G.txt
+[Generated with run_benchmark.sh]

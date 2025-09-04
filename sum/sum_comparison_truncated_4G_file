@@ -1,0 +1,12 @@
+Benchmark 1: sum /home/bamf0/temp/large_files/truncated_4G_file
+  Time (mean ± σ):      4.924 s ±  0.011 s    [User: 4.609 s, System: 0.315 s]
+  Range (min … max):    4.908 s …  4.946 s    10 runs
+ 
+Benchmark 2: coreutils sum /home/bamf0/temp/large_files/truncated_4G_file
+  Time (mean ± σ):      2.263 s ±  0.026 s    [User: 1.810 s, System: 0.453 s]
+  Range (min … max):    2.245 s …  2.334 s    10 runs
+ 
+Summary
+  coreutils sum /home/bamf0/temp/large_files/truncated_4G_file ran
+    2.18 ± 0.03 times faster than sum /home/bamf0/temp/large_files/truncated_4G_file
+[Generated with run_benchmark.sh]

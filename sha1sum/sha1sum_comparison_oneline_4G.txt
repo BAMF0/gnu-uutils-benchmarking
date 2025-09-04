@@ -1,0 +1,12 @@
+Benchmark 1: sha1sum /home/bamf0/temp/large_files/oneline_4G.txt
+  Time (mean ± σ):      1.917 s ±  0.007 s    [User: 1.610 s, System: 0.307 s]
+  Range (min … max):    1.909 s …  1.934 s    10 runs
+ 
+Benchmark 2: coreutils sha1sum /home/bamf0/temp/large_files/oneline_4G.txt
+  Time (mean ± σ):      2.045 s ±  0.004 s    [User: 1.674 s, System: 0.370 s]
+  Range (min … max):    2.039 s …  2.053 s    10 runs
+ 
+Summary
+  sha1sum /home/bamf0/temp/large_files/oneline_4G.txt ran
+    1.07 ± 0.00 times faster than coreutils sha1sum /home/bamf0/temp/large_files/oneline_4G.txt
+[Generated with run_benchmark.sh]

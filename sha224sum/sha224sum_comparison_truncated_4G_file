@@ -1,0 +1,12 @@
+Benchmark 1: sha224sum /home/bamf0/temp/large_files/truncated_4G_file
+  Time (mean ± σ):      2.150 s ±  0.032 s    [User: 1.822 s, System: 0.327 s]
+  Range (min … max):    2.116 s …  2.210 s    10 runs
+ 
+Benchmark 2: coreutils sha224sum /home/bamf0/temp/large_files/truncated_4G_file
+  Time (mean ± σ):      6.263 s ±  0.054 s    [User: 5.883 s, System: 0.379 s]
+  Range (min … max):    6.212 s …  6.390 s    10 runs
+ 
+Summary
+  sha224sum /home/bamf0/temp/large_files/truncated_4G_file ran
+    2.91 ± 0.05 times faster than coreutils sha224sum /home/bamf0/temp/large_files/truncated_4G_file
+[Generated with run_benchmark.sh]

@@ -1,0 +1,12 @@
+Benchmark 1: md5sum /home/bamf0/temp/large_files/truncated_4G_file
+  Time (mean ± σ):      4.404 s ±  0.042 s    [User: 4.078 s, System: 0.326 s]
+  Range (min … max):    4.319 s …  4.447 s    10 runs
+ 
+Benchmark 2: coreutils md5sum /home/bamf0/temp/large_files/truncated_4G_file
+  Time (mean ± σ):      5.651 s ±  0.025 s    [User: 5.265 s, System: 0.385 s]
+  Range (min … max):    5.619 s …  5.701 s    10 runs
+ 
+Summary
+  md5sum /home/bamf0/temp/large_files/truncated_4G_file ran
+    1.28 ± 0.01 times faster than coreutils md5sum /home/bamf0/temp/large_files/truncated_4G_file
+[Generated with run_benchmark.sh]

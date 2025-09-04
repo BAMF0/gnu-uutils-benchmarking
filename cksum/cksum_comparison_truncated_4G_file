@@ -1,0 +1,12 @@
+Benchmark 1: cksum /home/bamf0/temp/large_files/truncated_4G_file
+  Time (mean ± σ):     438.6 ms ±  20.4 ms    [User: 119.6 ms, System: 318.8 ms]
+  Range (min … max):   422.8 ms … 491.1 ms    10 runs
+ 
+Benchmark 2: coreutils cksum /home/bamf0/temp/large_files/truncated_4G_file
+  Time (mean ± σ):      7.605 s ±  0.023 s    [User: 7.209 s, System: 0.395 s]
+  Range (min … max):    7.572 s …  7.651 s    10 runs
+ 
+Summary
+  cksum /home/bamf0/temp/large_files/truncated_4G_file ran
+   17.34 ± 0.81 times faster than coreutils cksum /home/bamf0/temp/large_files/truncated_4G_file
+[Generated with run_benchmark.sh]

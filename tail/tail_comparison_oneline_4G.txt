@@ -1,0 +1,12 @@
+Benchmark 1: tail /home/bamf0/temp/large_files/oneline_4G.txt
+  Time (mean ± σ):     866.0 ms ±  26.5 ms    [User: 142.3 ms, System: 723.5 ms]
+  Range (min … max):   829.2 ms … 900.7 ms    10 runs
+ 
+Benchmark 2: coreutils tail /home/bamf0/temp/large_files/oneline_4G.txt
+  Time (mean ± σ):     636.0 ms ±  19.5 ms    [User: 325.8 ms, System: 310.0 ms]
+  Range (min … max):   611.1 ms … 674.7 ms    10 runs
+ 
+Summary
+  coreutils tail /home/bamf0/temp/large_files/oneline_4G.txt ran
+    1.36 ± 0.06 times faster than tail /home/bamf0/temp/large_files/oneline_4G.txt
+[Generated with run_benchmark.sh]

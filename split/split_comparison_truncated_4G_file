@@ -1,0 +1,12 @@
+Benchmark 1: split /home/bamf0/temp/large_files/truncated_4G_file
+  Time (mean ± σ):      2.389 s ±  0.297 s    [User: 0.047 s, System: 1.050 s]
+  Range (min … max):    1.780 s …  2.821 s    10 runs
+ 
+Benchmark 2: coreutils split /home/bamf0/temp/large_files/truncated_4G_file
+  Time (mean ± σ):      2.542 s ±  0.239 s    [User: 0.280 s, System: 1.381 s]
+  Range (min … max):    2.232 s …  3.092 s    10 runs
+ 
+Summary
+  split /home/bamf0/temp/large_files/truncated_4G_file ran
+    1.06 ± 0.17 times faster than coreutils split /home/bamf0/temp/large_files/truncated_4G_file
+[Generated with run_benchmark.sh]

@@ -1,0 +1,12 @@
+Benchmark 1: md5sum /home/bamf0/temp/large_files/oneline_4G.txt
+  Time (mean ± σ):      4.359 s ±  0.028 s    [User: 4.034 s, System: 0.324 s]
+  Range (min … max):    4.326 s …  4.411 s    10 runs
+ 
+Benchmark 2: coreutils md5sum /home/bamf0/temp/large_files/oneline_4G.txt
+  Time (mean ± σ):      5.616 s ±  0.041 s    [User: 5.230 s, System: 0.385 s]
+  Range (min … max):    5.578 s …  5.687 s    10 runs
+ 
+Summary
+  md5sum /home/bamf0/temp/large_files/oneline_4G.txt ran
+    1.29 ± 0.01 times faster than coreutils md5sum /home/bamf0/temp/large_files/oneline_4G.txt
+[Generated with run_benchmark.sh]

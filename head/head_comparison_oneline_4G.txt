@@ -1,0 +1,12 @@
+Benchmark 1: head /home/bamf0/temp/large_files/oneline_4G.txt
+  Time (mean ± σ):      1.370 s ±  0.007 s    [User: 0.966 s, System: 0.404 s]
+  Range (min … max):    1.358 s …  1.379 s    10 runs
+ 
+Benchmark 2: coreutils head /home/bamf0/temp/large_files/oneline_4G.txt
+  Time (mean ± σ):     664.3 ms ±   8.8 ms    [User: 392.1 ms, System: 272.1 ms]
+  Range (min … max):   656.5 ms … 686.8 ms    10 runs
+ 
+Summary
+  coreutils head /home/bamf0/temp/large_files/oneline_4G.txt ran
+    2.06 ± 0.03 times faster than head /home/bamf0/temp/large_files/oneline_4G.txt
+[Generated with run_benchmark.sh]

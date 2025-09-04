@@ -1,0 +1,12 @@
+Benchmark 1: b2sum /home/bamf0/temp/large_files/oneline_4G.txt
+  Time (mean ± σ):      3.631 s ±  0.014 s    [User: 3.321 s, System: 0.310 s]
+  Range (min … max):    3.620 s …  3.665 s    10 runs
+ 
+Benchmark 2: coreutils b2sum /home/bamf0/temp/large_files/oneline_4G.txt
+  Time (mean ± σ):      3.034 s ±  0.018 s    [User: 2.667 s, System: 0.367 s]
+  Range (min … max):    3.012 s …  3.064 s    10 runs
+ 
+Summary
+  coreutils b2sum /home/bamf0/temp/large_files/oneline_4G.txt ran
+    1.20 ± 0.01 times faster than b2sum /home/bamf0/temp/large_files/oneline_4G.txt
+[Generated with run_benchmark.sh]
