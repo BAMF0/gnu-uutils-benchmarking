@@ -10,7 +10,7 @@ hyperfine '<GNU cmd> <input> [arg(s)]' '<uutil cmd> <input> [arg(s)]' -N --warmu
 ```
 
 ## Reference Files
-* `oneline_4G.txt`: A one line file consisting of only zeroes (4GB).
+* `oneline_4G.txt`: A one line file consisting of only A's (4GB).
 ```shell
 dd if=/dev/zero bs=1M count=4096 status=progress | tr '\0' 'A' |
 head -c 4294967295 > oneline_4G.txt && echo >> oneline_4G.txt

@@ -1,0 +1,12 @@
+Benchmark 1: fmt /home/bamf0/temp/large_files/oneline_4G.txt
+  Time (mean ± σ):      3.462 s ±  0.038 s    [User: 2.945 s, System: 0.517 s]
+  Range (min … max):    3.427 s …  3.539 s    10 runs
+ 
+Benchmark 2: coreutils fmt /home/bamf0/temp/large_files/oneline_4G.txt
+  Time (mean ± σ):     12.428 s ±  0.062 s    [User: 10.966 s, System: 1.455 s]
+  Range (min … max):   12.324 s … 12.524 s    10 runs
+ 
+Summary
+  fmt /home/bamf0/temp/large_files/oneline_4G.txt ran
+    3.59 ± 0.04 times faster than coreutils fmt /home/bamf0/temp/large_files/oneline_4G.txt
+[Generated with run_benchmark.sh]

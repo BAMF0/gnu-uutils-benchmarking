@@ -1,0 +1,6 @@
+Benchmark 1: pr /home/bamf0/temp/large_files/oneline_4G.txt
+  Time (mean ± σ):     17.445 s ±  0.249 s    [User: 16.892 s, System: 0.552 s]
+  Range (min … max):   16.971 s … 17.733 s    10 runs
+ 
+Benchmark 2: coreutils pr /home/bamf0/temp/large_files/oneline_4G.txt
+[Generated with run_benchmark.sh]

@@ -1,0 +1,11 @@
+Benchmark 1: base64 /home/bamf0/temp/large_files/oneline_4G.txt
+  Time (mean ± σ):      2.461 s ±  0.037 s    [User: 2.067 s, System: 0.394 s]
+  Range (min … max):    2.416 s …  2.525 s    10 runs
+ 
+Benchmark 2: coreutils base64 /home/bamf0/temp/large_files/oneline_4G.txt
+  Time (mean ± σ):     19.556 s ±  0.571 s    [User: 17.923 s, System: 1.632 s]
+  Range (min … max):   18.475 s … 20.434 s    10 runs
+ 
+Summary
+  base64 /home/bamf0/temp/large_files/oneline_4G.txt ran
+    7.95 ± 0.26 times faster than coreutils base64 /home/bamf0/temp/large_files/oneline_4G.txt

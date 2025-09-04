@@ -13,3 +13,4 @@ LOG_FILE="${COMMAND}_comparison_${FILENAME}"
 
 touch "${LOG_FILE}"
 hyperfine "${COMMAND} ${INPUT}" "${UUTIL_COMMAND} ${INPUT}" -N --warmup 3 >&1 | tee "${LOG_FILE}"
+echo "[Generated with run_benchmark.sh]" >> "${LOG_FILE}"
