@@ -1,0 +1,13 @@
+Command: hyperfine 'wc oneline_4G.txt' 'coreutils wc oneline_4G.txt' -N --warmup 3
+Result:
+    Benchmark 1: wc oneline_4G.txt
+      Time (mean ± σ):      6.600 s ±  0.021 s    [User: 5.732 s, System: 0.790 s]
+      Range (min … max):    6.556 s …  6.636 s    10 runs
+     
+    Benchmark 2: coreutils wc oneline_4G.txt
+      Time (mean ± σ):      6.164 s ±  0.061 s    [User: 5.488 s, System: 0.620 s]
+      Range (min … max):    6.065 s …  6.253 s    10 runs
+     
+    Summary
+      coreutils wc oneline_4G.txt ran
+        1.07 ± 0.01 times faster than wc oneline_4G.txt

@@ -1,0 +1,13 @@
+Command: hyperfine 'tac oneline_4G.txt' 'coreutils tac oneline_4G.txt' -N --warmup 3
+Result:
+    Benchmark 1: tac oneline_4G.txt
+      Time (mean ± σ):      3.493 s ±  0.019 s    [User: 1.115 s, System: 1.792 s]
+      Range (min … max):    3.462 s …  3.522 s    10 runs
+     
+    Benchmark 2: coreutils tac oneline_4G.txt
+      Time (mean ± σ):     359.3 ms ±   9.2 ms    [User: 258.5 ms, System: 100.6 ms]
+      Range (min … max):   351.0 ms … 382.2 ms    10 runs
+     
+    Summary
+      coreutils tac oneline_4G.txt ran
+        9.72 ± 0.25 times faster than tac oneline_4G.txt

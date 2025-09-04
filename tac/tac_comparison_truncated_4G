@@ -1,0 +1,13 @@
+Command: hyperfine 'tac truncated_4G_file' 'coreutils tac truncated_4G_file' -N --warmup 3
+Result:
+    Benchmark 1: tac truncated_4G_file
+      Time (mean ± σ):      2.417 s ±  0.014 s    [User: 1.068 s, System: 1.348 s]
+      Range (min … max):    2.400 s …  2.437 s    10 runs
+     
+    Benchmark 2: coreutils tac truncated_4G_file
+      Time (mean ± σ):     586.3 ms ±  14.7 ms    [User: 519.9 ms, System: 66.2 ms]
+      Range (min … max):   573.2 ms … 624.5 ms    10 runs
+     
+    Summary
+      coreutils tac truncated_4G_file ran
+        4.12 ± 0.11 times faster than tac truncated_4G_file

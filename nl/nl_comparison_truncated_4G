@@ -1,0 +1,13 @@
+Command: hyperfine 'nl truncated_4G_file' 'coreutils nl truncated_4G_file' -N --warmup 3
+Result:
+    Benchmark 1: nl truncated_4G_file
+      Time (mean ± σ):      3.463 s ±  0.032 s    [User: 1.908 s, System: 1.554 s]
+      Range (min … max):    3.432 s …  3.530 s    10 runs
+     
+    Benchmark 2: coreutils nl truncated_4G_file
+      Time (mean ± σ):      3.258 s ±  0.050 s    [User: 1.741 s, System: 1.517 s]
+      Range (min … max):    3.210 s …  3.350 s    10 runs
+     
+    Summary
+      coreutils nl truncated_4G_file ran
+        1.06 ± 0.02 times faster than nl truncated_4G_file

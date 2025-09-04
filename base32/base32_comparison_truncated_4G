@@ -1,0 +1,13 @@
+Command: hyperfine 'base32 truncated_4G_file' 'coreutils base32 truncated_4G_file' -N --warmup 3
+Results:
+    Benchmark 1: base32 truncated_4G_file
+      Time (mean ± σ):      2.994 s ±  0.034 s    [User: 2.580 s, System: 0.414 s]
+      Range (min … max):    2.968 s …  3.071 s    10 runs
+     
+    Benchmark 2: coreutils base32 truncated_4G_file
+      Time (mean ± σ):     20.794 s ±  0.526 s    [User: 19.166 s, System: 1.626 s]
+      Range (min … max):   20.061 s … 21.900 s    10 runs
+     
+    Summary
+      base32 truncated_4G_file ran
+        6.94 ± 0.19 times faster than coreutils base32 truncated_4G_file

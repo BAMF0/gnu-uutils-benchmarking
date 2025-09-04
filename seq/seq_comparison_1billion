@@ -1,0 +1,13 @@
+Command: hyperfine 'seq 1000000000' 'coreutils seq 1000000000' -N --warmup 3
+Result:
+    Benchmark 1: seq 1000000000
+      Time (mean ± σ):      4.310 s ±  0.019 s    [User: 4.179 s, System: 0.130 s]
+      Range (min … max):    4.291 s …  4.342 s    10 runs
+     
+    Benchmark 2: coreutils seq 1000000000
+      Time (mean ± σ):      4.533 s ±  0.037 s    [User: 4.465 s, System: 0.068 s]
+      Range (min … max):    4.502 s …  4.611 s    10 runs
+     
+    Summary
+      seq 1000000000 ran
+        1.05 ± 0.01 times faster than coreutils seq 1000000000

@@ -1,0 +1,13 @@
+Command: hyperfine 'cat truncated_4G_file' 'coreutils cat truncated_4G_file' -N --warmup 3
+Results:
+    Benchmark 1: cat truncated_4G_file
+      Time (mean ± σ):     235.2 ms ±   1.3 ms    [User: 1.6 ms, System: 233.4 ms]
+      Range (min … max):   233.2 ms … 238.2 ms    12 runs
+     
+    Benchmark 2: coreutils cat truncated_4G_file
+      Time (mean ± σ):      37.6 ms ±   1.8 ms    [User: 5.1 ms, System: 32.2 ms]
+      Range (min … max):    34.7 ms …  43.5 ms    79 runs
+     
+    Summary
+      coreutils cat truncated_4G_file ran
+        6.26 ± 0.31 times faster than cat truncated_4G_file

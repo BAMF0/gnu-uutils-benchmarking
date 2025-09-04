@@ -1,0 +1,13 @@
+Command: hyperfine 'nl oneline_4G.txt' 'coreutils nl oneline_4G.txt' -N --warmup 3
+Result:
+    Benchmark 1: nl oneline_4G.txt
+      Time (mean ± σ):      3.249 s ±  0.009 s    [User: 1.913 s, System: 1.335 s]
+      Range (min … max):    3.234 s …  3.261 s    10 runs
+     
+    Benchmark 2: coreutils nl oneline_4G.txt
+      Time (mean ± σ):      2.999 s ±  0.015 s    [User: 1.694 s, System: 1.304 s]
+      Range (min … max):    2.981 s …  3.033 s    10 runs
+     
+    Summary
+      coreutils nl oneline_4G.txt ran
+        1.08 ± 0.01 times faster than nl oneline_4G.txt
