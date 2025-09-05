@@ -1,0 +1,5 @@
+Benchmark 1: unexpand /home/bamf0/temp/large_files/oneline_4G.txt
+  Time (mean ± σ):      5.196 s ±  0.040 s    [User: 4.693 s, System: 0.502 s]
+  Range (min … max):    5.137 s …  5.254 s    10 runs
+ 
+Benchmark 2: coreutils unexpand /home/bamf0/temp/large_files/oneline_4G.txt

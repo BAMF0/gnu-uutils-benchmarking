@@ -1,0 +1,14 @@
+Benchmark 1: comm /home/bamf0/temp/large_files/truncated_4G_file /home/bamf0/temp/large_files/truncated_4G_file
+  Time (mean ± σ):      7.028 s ±  0.057 s    [User: 4.172 s, System: 2.855 s]
+  Range (min … max):    6.996 s …  7.190 s    10 runs
+
+  Warning: Statistical outliers were detected. Consider re-running this benchmark on a quiet system without any interferences from other programs. It might help to use the '--warmup' or '--prepare' options.
+
+Benchmark 2: coreutils comm /home/bamf0/temp/large_files/truncated_4G_file /home/bamf0/temp/large_files/truncated_4G_file
+  Time (mean ± σ):      4.938 s ±  0.115 s    [User: 1.959 s, System: 2.972 s]
+  Range (min … max):    4.845 s …  5.172 s    10 runs
+
+Summary
+  coreutils comm /home/bamf0/temp/large_files/truncated_4G_file /home/bamf0/temp/large_files/truncated_4G_file ran
+    1.42 ± 0.04 times faster than comm /home/bamf0/temp/large_files/truncated_4G_file /home/bamf0/temp/large_files/truncated_4G_file
+

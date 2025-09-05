@@ -1,0 +1,12 @@
+Benchmark 1: uniq /home/bamf0/temp/large_files/oneline_4G.txt
+  Time (mean ± σ):      3.634 s ±  0.038 s    [User: 2.025 s, System: 1.564 s]
+  Range (min … max):    3.564 s …  3.697 s    10 runs
+ 
+Benchmark 2: coreutils uniq /home/bamf0/temp/large_files/oneline_4G.txt
+  Time (mean ± σ):      2.312 s ±  0.029 s    [User: 0.648 s, System: 1.591 s]
+  Range (min … max):    2.268 s …  2.361 s    10 runs
+ 
+Summary
+  coreutils uniq /home/bamf0/temp/large_files/oneline_4G.txt ran
+    1.57 ± 0.03 times faster than uniq /home/bamf0/temp/large_files/oneline_4G.txt
+[Generated with run_benchmark.sh]

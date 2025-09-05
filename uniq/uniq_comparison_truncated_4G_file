@@ -1,0 +1,12 @@
+Benchmark 1: uniq /home/bamf0/temp/large_files/truncated_4G_file
+  Time (mean ± σ):      3.310 s ±  0.019 s    [User: 1.942 s, System: 1.367 s]
+  Range (min … max):    3.290 s …  3.352 s    10 runs
+ 
+Benchmark 2: coreutils uniq /home/bamf0/temp/large_files/truncated_4G_file
+  Time (mean ± σ):      2.005 s ±  0.036 s    [User: 0.637 s, System: 1.367 s]
+  Range (min … max):    1.916 s …  2.039 s    10 runs
+ 
+Summary
+  coreutils uniq /home/bamf0/temp/large_files/truncated_4G_file ran
+    1.65 ± 0.03 times faster than uniq /home/bamf0/temp/large_files/truncated_4G_file
+[Generated with run_benchmark.sh]

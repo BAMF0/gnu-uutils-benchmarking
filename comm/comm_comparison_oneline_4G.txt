@@ -1,0 +1,12 @@
+Benchmark 1: comm /home/bamf0/temp/large_files/oneline_4G.txt /home/bamf0/temp/large_files/oneline_4G.txt
+  Time (mean ± σ):      7.475 s ±  0.168 s    [User: 4.285 s, System: 3.004 s]
+  Range (min … max):    7.282 s …  7.851 s    10 runs
+
+Benchmark 2: coreutils comm /home/bamf0/temp/large_files/oneline_4G.txt /home/bamf0/temp/large_f
+  Time (mean ± σ):      4.985 s ±  0.050 s    [User: 1.869 s, System: 2.956 s]
+  Range (min … max):    4.921 s …  5.084 s    10 runs
+
+Summary
+  coreutils comm /home/bamf0/temp/large_files/oneline_4G.txt /home/bamf0/temp/large_files/oneline_4G.txt ran
+    1.50 ± 0.04 times faster than comm /home/bamf0/temp/large_files/oneline_4G.txt /home/bamf0/temp/large_files/oneline_4G.txt
+

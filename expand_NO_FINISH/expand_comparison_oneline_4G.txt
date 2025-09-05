@@ -1,0 +1,5 @@
+Benchmark 1: expand /home/bamf0/temp/large_files/oneline_4G.txt
+  Time (mean ± σ):      4.264 s ±  0.042 s    [User: 3.760 s, System: 0.504 s]
+  Range (min … max):    4.213 s …  4.341 s    10 runs
+ 
+Benchmark 2: coreutils expand /home/bamf0/temp/large_files/oneline_4G.txt
