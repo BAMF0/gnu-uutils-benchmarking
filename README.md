@@ -9,6 +9,12 @@ All utilities are compared using the [`hyperfine`](https://github.com/sharkdp/hy
 hyperfine '<GNU cmd> <input> [arg(s)]' '<uutil cmd> <input> [arg(s)]' -N --warmup 3
 ```
 
+## Directory Comments
+Log directories have the form of `<cmd><_optional_comment>`. Comments include:
+* `UNSTABLE_LARGE_FILES`: utility process is killed due to OOM for large files.
+* `NO_FINISH`: utility runs for an exceedingly large amount of time, making execution time incomparable.
+* `<feature>_NOT_IMPLEMENTED`: benchmark could not be run due to a feature missing in the uutils version.
+
 ## Reference Files
 * `oneline_4G.txt`: A one line file consisting of only A's (4GB).
 ```shell
