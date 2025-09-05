@@ -1,0 +1,12 @@
+Benchmark 1: wc /home/bamf0/temp/large_files/truncated_4G_file
+  Time (mean ± σ):      6.114 s ±  0.041 s    [User: 5.602 s, System: 0.511 s]
+  Range (min … max):    6.060 s …  6.186 s    10 runs
+ 
+Benchmark 2: coreutils wc /home/bamf0/temp/large_files/truncated_4G_file
+  Time (mean ± σ):      5.938 s ±  0.010 s    [User: 5.404 s, System: 0.533 s]
+  Range (min … max):    5.920 s …  5.950 s    10 runs
+ 
+Summary
+  coreutils wc /home/bamf0/temp/large_files/truncated_4G_file ran
+    1.03 ± 0.01 times faster than wc /home/bamf0/temp/large_files/truncated_4G_file
+[Generated with run_benchmark.sh]

@@ -10,45 +10,49 @@ hyperfine '<GNU cmd> <input> [arg(s)]' '<uutil cmd> <input> [arg(s)]' -N --warmu
 ```
 
 ## Overview and Results
-Benchmarks are sorted after function into directories:
+Benchmarks are sorted after function into directories. 
+
+**NOTE**: See respective utility for statistical significance in each comparison.
+
 #### **[`format_file_content/`](format_file_content/)**
-  *  [fmt](format_file_content/fmt)
-  *  [fold](format_file_content/fold)
-#### **[`numeric_operations/`](numeric_operations/)**
-  * [factor](numeric_operations/factor)
-  * [numfmt](numeric_operations/numfmt)
-  * [seq](numeric_operations/seq)
+  *  [fmt](format_file_content/fmt) - (GNU 3.51–3.59x faster)
+  *  [fold](format_file_content/fold) - (GNU 2.0–2.08x faster)
+  *  [pr](format_file_content/pr_UNSTABLE_LARGE_FILES) - (**uutils unstable**)
+#### **[`numeric_operations/`](numeric_operations/)** -
+  * [factor](numeric_operations/factor) - (GNU 3.15x faster)
+  * [numfmt](numeric_operations/numfmt) - (GNU 3.44x faster)
+  * [seq](numeric_operations/seq) - (GNU 1.05x faster)
 #### **[`operate_characters/`](operate_characters/)**
-  * [expand](operate_characters/expand_NO_FINISH)
-  * [unexpand](operate_characters/unexpand_NO_FINISH)
+  * [expand](operate_characters/expand_NO_FINISH) - (**uutils ran out ouf time**)
+  * [unexpand](operate_characters/unexpand_NO_FINISH) - (**uutils ran out of time**)
 #### **[`operate_sorted_files/`](operate_sorted_files/)**
-  * [comm](operate_sorted_files/comm)
-  * [ptx](operate_sorted_files/ptx_GNU_EXT_NOT_IMPLEMENTED)
-  * [shuf](operate_sorted_files/shuf)
-  * [sort](operate_sorted_files/sort_NO_FINISH)
-  * [uniq](operate_sorted_files/uniq)
+  * [comm](operate_sorted_files/comm) - (uutils 1.42–1.50x faster)
+  * [ptx](operate_sorted_files/ptx_GNU_EXT_NOT_IMPLEMENTED) - (**GNU extension not implemented for uutils**)
+  * [shuf](operate_sorted_files/shuf) - (GNU 1.49–1.53x faster)
+  * [sort](operate_sorted_files/sort_NO_FINISH) - (**uutils ran out of time**)
+  * [uniq](operate_sorted_files/uniq) - (uutils 1.57–1.65x faster)
 #### **[`output_entire_files/`](output_entire_files/)**
-  * [base32](operate_entire_files/base32)
-  * [base64](operate_entire_files/base64)
-  * [cat](operate_entire_files/cat)
-  * [nl](operate_entire_files/nl)
-  * [od](operate_entire_files/od)
-  * [tac](operate_entire_files/tac)
+  * [base32](operate_entire_files/base32) - (GNU 6.94–7.09x faster)
+  * [base64](operate_entire_files/base64) - (GNU ~7.95x faster)
+  * [cat](operate_entire_files/cat) - (uutils 6.26x faster for `truncated_4G_file`, GNU1.11 times faster for `oneline_4G.txt`)
+  * [nl](operate_entire_files/nl) - (uutils 1.06–1.08x faster)
+  * [od](operate_entire_files/od) - (GNU 3.11–3.31x faster)
+  * [tac](operate_entire_files/tac) - (uutils 4.12–9.72x faster)
 #### **[`output_part_files/`](output_part_files/)**
-  * [head](operate_part_files/head)
-  * [split](operate_part_files/split)
-  * [tail](operate_part_files/tail)
+  * [head](operate_part_files/head) - (uutils 1.09–2.06x faster)
+  * [split](operate_part_files/split) - (GNU 1.06–1.117x faster)
+  * [tail](operate_part_files/tail) - (uutils 1.27–1.36x faster)
 #### **[`summarize_files/`](summarize_files/)**
-  * [b2sum](summarize_files/b2sum)
-  * [cksum](summarize_files/cksum)
-  * [md5sum](summarize_files/md5sum)
-  * [sha1sum](summarize_files/sha1sum)
-  * [sha224sum](summarize_files/sha224sum)
-  * [sha256sum](summarize_files/sha256sum)
-  * [sha384sum](summarize_files/sha384sum)
-  * [sha512sum](summarize_files/sha512sum)
-  * [sum](summarize_files/sum)
-  * [wc](summarize_files/wc)
+  * [b2sum](summarize_files/b2sum) - (uutils 1.20x faster)
+  * [cksum](summarize_files/cksum) - (GNU **17.34–17.75**x faster)
+  * [md5sum](summarize_files/md5sum) - (GNU 1.28–1.29x faster)
+  * [sha1sum](summarize_files/sha1sum) - (GNU 1.06–1.07x faster)
+  * [sha224sum](summarize_files/sha224sum) – (GNU 2.91–2.96x faster)
+  * [sha256sum](summarize_files/sha256sum) - (GNU 2.94-2.96x faster)
+  * [sha384sum](summarize_files/sha384sum) - (GNU 1.24–1.27x faster)
+  * [sha512sum](summarize_files/sha512sum) - (GNU 1.25–1.28x faster)
+  * [sum](summarize_files/sum) - (uutils 2.18–2.19x faster)
+  * [wc](summarize_files/wc) - (uutils 1.03x faster)
 
 ### Comments
 Log directories have the form of `<cmd><_optional_comment>`. Comments include:
