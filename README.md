@@ -9,7 +9,48 @@ All utilities are compared using the [`hyperfine`](https://github.com/sharkdp/hy
 hyperfine '<GNU cmd> <input> [arg(s)]' '<uutil cmd> <input> [arg(s)]' -N --warmup 3
 ```
 
-## Directory Comments
+## Overview and Results
+Benchmarks are sorted after function into directories:
+#### **[`format_file_content/`](format_file_content/)**
+  *  [fmt](format_file_content/fmt)
+  *  [fold](format_file_content/fold)
+#### **[`numeric_operations/`](numeric_operations/)**
+  * [factor](numeric_operations/factor)
+  * [numfmt](numeric_operations/numfmt)
+  * [seq](numeric_operations/seq)
+#### **[`operate_characters/`](operate_characters/)**
+  * [expand](operate_characters/expand_NO_FINISH)
+  * [unexpand](operate_characters/unexpand_NO_FINISH)
+#### **[`operate_sorted_files/`](operate_sorted_files/)**
+  * [comm](operate_sorted_files/comm)
+  * [ptx](operate_sorted_files/ptx_GNU_EXT_NOT_IMPLEMENTED)
+  * [shuf](operate_sorted_files/shuf)
+  * [sort](operate_sorted_files/sort_NO_FINISH)
+  * [uniq](operate_sorted_files/uniq)
+#### **[`output_entire_files/`](output_entire_files/)**
+  * [base32](operate_entire_files/base32)
+  * [base64](operate_entire_files/base64)
+  * [cat](operate_entire_files/cat)
+  * [nl](operate_entire_files/nl)
+  * [od](operate_entire_files/od)
+  * [tac](operate_entire_files/tac)
+#### **[`output_part_files/`](output_part_files/)**
+  * [head](operate_part_files/head)
+  * [split](operate_part_files/split)
+  * [tail](operate_part_files/tail)
+#### **[`summarize_files/`](summarize_files/)**
+  * [b2sum](summarize_files/b2sum)
+  * [cksum](summarize_files/cksum)
+  * [md5sum](summarize_files/md5sum)
+  * [sha1sum](summarize_files/sha1sum)
+  * [sha224sum](summarize_files/sha224sum)
+  * [sha256sum](summarize_files/sha256sum)
+  * [sha384sum](summarize_files/sha384sum)
+  * [sha512sum](summarize_files/sha512sum)
+  * [sum](summarize_files/sum)
+  * [wc](summarize_files/wc)
+
+### Comments
 Log directories have the form of `<cmd><_optional_comment>`. Comments include:
 * `UNSTABLE_LARGE_FILES`: utility process is killed due to OOM for large files.
 * `NO_FINISH`: utility runs for an exceedingly large amount of time, making execution time incomparable.
