@@ -18,7 +18,7 @@ Benchmarks are sorted after function into directories.
   *  [fmt](format_file_content/fmt) - (GNU 3.51–3.59x faster)
   *  [fold](format_file_content/fold) - (GNU 2.0–2.08x faster)
   *  [pr](format_file_content/pr_UNSTABLE_LARGE_FILES) - (**uutils unstable**)
-#### **[`numeric_operations/`](numeric_operations/)** -
+#### **[`numeric_operations/`](numeric_operations/)** 
   * [factor](numeric_operations/factor) - (GNU 3.15x faster)
   * [numfmt](numeric_operations/numfmt) - (GNU 3.44x faster)
   * [seq](numeric_operations/seq) - (GNU 1.05x faster)
@@ -34,13 +34,13 @@ Benchmarks are sorted after function into directories.
 #### **[`output_entire_files/`](output_entire_files/)**
   * [base32](operate_entire_files/base32) - (GNU 6.94–7.09x faster)
   * [base64](operate_entire_files/base64) - (GNU ~7.95x faster)
-  * [cat](operate_entire_files/cat) - (uutils 6.26x faster for `truncated_4G_file`, GNU1.11 times faster for `oneline_4G.txt`)
+  * [cat](operate_entire_files/cat) - (uutils 6.26x faster for `truncated_4G_file`, GNU 1.11 times faster for `oneline_4G.txt`)
   * [nl](operate_entire_files/nl) - (uutils 1.06–1.08x faster)
   * [od](operate_entire_files/od) - (GNU 3.11–3.31x faster)
   * [tac](operate_entire_files/tac) - (uutils 4.12–9.72x faster)
 #### **[`output_part_files/`](output_part_files/)**
   * [head](operate_part_files/head) - (uutils 1.09–2.06x faster)
-  * [split](operate_part_files/split) - (GNU 1.06–1.117x faster)
+  * [split](operate_part_files/split) - (GNU 1.06–1.17x faster)
   * [tail](operate_part_files/tail) - (uutils 1.27–1.36x faster)
 #### **[`summarize_files/`](summarize_files/)**
   * [b2sum](summarize_files/b2sum) - (uutils 1.20x faster)
