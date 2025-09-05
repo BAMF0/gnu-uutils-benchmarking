@@ -1,0 +1,11 @@
+Benchmark 1: factor 1000000000
+  Time (mean ± σ):     457.3 µs ±  40.3 µs    [User: 289.1 µs, System: 124.3 µs]
+  Range (min … max):   302.9 µs … 704.2 µs    5799 runs
+
+Benchmark 2: coreutils factor 1000000000
+  Time (mean ± σ):       1.4 ms ±   0.2 ms    [User: 0.4 ms, System: 1.0 ms]
+  Range (min … max):     0.9 ms …   1.9 ms    1922 runs
+
+Summary
+  factor 1000000000 ran
+    3.15 ± 0.46 times faster than coreutils factor 1000000000

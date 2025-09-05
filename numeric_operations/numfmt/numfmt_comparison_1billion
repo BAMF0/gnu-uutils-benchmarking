@@ -1,0 +1,12 @@
+Benchmark 1: numfmt 1000000000
+  Time (mean ± σ):     438.5 µs ±  39.4 µs    [User: 276.3 µs, System: 118.9 µs]
+  Range (min … max):   284.3 µs … 718.3 µs    6265 runs
+
+Benchmark 2: coreutils numfmt 1000000000
+  Time (mean ± σ):       1.5 ms ±   0.2 ms    [User: 0.4 ms, System: 1.0 ms]
+  Range (min … max):     1.0 ms …   2.1 ms    2402 runs
+
+Summary
+  numfmt 1000000000 ran
+    3.44 ± 0.52 times faster than coreutils numfmt 1000000000
+
