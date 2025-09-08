@@ -33,7 +33,7 @@ Benchmarks are sorted after function into directories.
   * [uniq](operate_sorted_files/uniq) - (uutils 1.57–1.65x faster)
 #### **[`output_entire_files/`](output_entire_files/)**
   * [base32](output_entire_files/base32) - (GNU 6.94–7.09x faster)
-  * [base64](output_entire_files/base64) - (GNU ~7.95x faster)
+  * [base64](output_entire_files/base64) - (GNU ~7.95x faster) - **Reported**, see [#8574](https://github.com/uutils/coreutils/issues/8574)
   * [cat](output_entire_files/cat) - (uutils 6.26x faster for `truncated_4G_file`, GNU 1.11 times faster for `oneline_4G.txt`)
   * [nl](output_entire_files/nl) - (uutils 1.06–1.08x faster)
   * [od](output_entire_files/od) - (GNU 3.11–3.31x faster)
