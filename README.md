@@ -23,17 +23,17 @@ Benchmarks are sorted after function into directories.
   * [numfmt](numeric_operations/numfmt) - (GNU 3.44x faster)
   * [seq](numeric_operations/seq) - (GNU 1.05x faster)
 #### **[`operate_characters/`](operate_characters/)**
-  * [expand](operate_characters/expand_NO_FINISH) - (**uutils ran out ouf time**)
-  * [unexpand](operate_characters/unexpand_NO_FINISH) - (**uutils ran out of time**)
+  * [expand](operate_characters/expand_NO_FINISH) - (**uutils ran out ouf time**, fixed in `0.2.0`)
+  * [unexpand](operate_characters/unexpand_NO_FINISH) - (**uutils ran out ouf time**, fixed in `0.2.0`)
 #### **[`operate_sorted_files/`](operate_sorted_files/)**
   * [comm](operate_sorted_files/comm) - (uutils 1.42–1.50x faster)
   * [ptx](operate_sorted_files/ptx_GNU_EXT_NOT_IMPLEMENTED) - (**GNU extension not implemented for uutils**)
   * [shuf](operate_sorted_files/shuf) - (GNU 1.49–1.53x faster)
-  * [sort](operate_sorted_files/sort_NO_FINISH) - (**uutils ran out of time**)
+  * [sort](operate_sorted_files/sort_NO_FINISH) - (**uutils ran out of time**) - **Reported** see [#8583](https://github.com/uutils/coreutils/issues/8583)
   * [uniq](operate_sorted_files/uniq) - (uutils 1.57–1.65x faster)
 #### **[`output_entire_files/`](output_entire_files/)**
   * [base32](output_entire_files/base32) - (GNU 6.94–7.09x faster)
-  * [base64](output_entire_files/base64) - (GNU ~7.95x faster) - **Reported**, see [#8574](https://github.com/uutils/coreutils/issues/8574)
+  * [base64](output_entire_files/base64) - (GNU ~7.95x faster) - **Fixed**, see [#8574](https://github.com/uutils/coreutils/issues/8574)
   * [cat](output_entire_files/cat) - (uutils 6.26x faster for `truncated_4G_file`, GNU 1.11 times faster for `oneline_4G.txt`)
   * [nl](output_entire_files/nl) - (uutils 1.06–1.08x faster)
   * [od](output_entire_files/od) - (GNU 3.11–3.31x faster)
